@@ -1,5 +1,6 @@
 <project name="My Project" default="help" basedir=".">
-  <!-- Define the properties used by the build -->
+  <!-- Ant Demo Project -->
+  <!-- Define the properties used by the Ant build -->
   <property name="app.name"      value="helloWorld"/>
   <property name="app.version"   value="0.1-dev"/>
   <property name="tcserver.home" value="C:\Apache\Tomcat-7.0.63" />
@@ -21,7 +22,7 @@
     <echo>prompt> ant all </echo>
   </target>
 
-  <!-- Define the CLASSPATH -->
+  <!-- Define the CLASSPATH for project-->
   <path id="compile.classpath">
     <fileset dir="${tcserver.home}/bin">
       <include name="*.jar"/>
